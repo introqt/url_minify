@@ -1,8 +1,13 @@
 This is a simple url shortener written with Laravel & PHP.
 
-For installation clone this repo, fill .env file with DB configuration & run:
+For installation do these steps:
 ```
 composer install
+mv .env.example .env
+```
+fill .env file with DB configuration & run:
+```
+php artisan key:generate
 php artisan migrate --seed
 php artisan serve
 ```
